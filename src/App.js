@@ -1,31 +1,39 @@
 import React, { useState } from 'react';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch, Route
+} from 'react-router-dom'
+import { Segment, Container,Button} from 'semantic-ui-react';
 import PhotoAndStory from './components/PhotoAndStory'
-import { Segment, Menu, Container} from 'semantic-ui-react';
-
+import PageMenu from './components/PageMenu';
+import Experience from './components/Experience';
+import cards from './objects/cards';
+import './App.css';
 const App = () => {
-  const [activeItem, setActiveItem] = useState('home');
+  const [rowsShown,setRowsShown] = useState(1);
   return (
     <div className="App">
-      <Segment.Group>
-        <Segment inverted textAlign='center'>
-          <Container style={{width:'80%'}}>
-            <Menu inverted secondary style={{fontSize:'1.25em' }}>
-              <Menu.Item name='home' active={activeItem === 'home'} onClick={() => setActiveItem('home')}>
-                Home
-              </Menu.Item>
-              <Menu.Item name='projects' active={activeItem === 'projects'} onClick={() => setActiveItem('projects')}>
-                Projects
-              </Menu.Item>
-            </Menu>
-            <PhotoAndStory />
-            {/*conditional rendering here */}
-          </Container>
-        </Segment>
-        <Segment >
-          {/*conditional rendering here */}
-        </Segment>
-      </Segment.Group>
+      <Router>
+        <Segment.Group>
+          <Segment inverted textAlign='center'>
+            <Container style={{ width: '80%' }}>
+              <PageMenu/>
+              <PhotoAndStory />
+            </Container>
+          </Segment>
+          <Segment >
+            <Experience rowsShown = {rowsShown}/>
+            <Container textAlign='center'>
+              <Button style={{marginTop:'25px'}} 
+              onClick={()=>setRowsShown(rowsShown+1)}
+              disabled={rowsShown >= cards.length}
+              >
+                Show More
+              </Button>
+            </Container>
+          </Segment>
+        </Segment.Group> 
+      </Router>
     </div>
   );
 }
