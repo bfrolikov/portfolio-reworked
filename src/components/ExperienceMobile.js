@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Divider, Grid, Transition } from 'semantic-ui-react';
 import ExperienceCard from './ExperienceCard';
 import cards from '../objects/cards';
 
-const Experience = ({rowsShown}) => {
+const ExperienceMobile = ({rowsShown}) => {
+    const columnStyleMobile =  {display:'flex',justifyContent:'center'};
     return (
         <div>
-            <Divider horizontal style={{ fontSize: '2.5em' }}>technologies that I use</Divider>
+            <Divider horizontal style={{ fontSize: '1.6em',marginBottom:'25px' }}>technologies that I use</Divider>
             <Container>
                 <Transition.Group
                 as = {Grid}
@@ -19,7 +20,7 @@ const Experience = ({rowsShown}) => {
                             <Grid.Row>
                                 {
                                     rowItem.map((cardItem)=>(
-                                        <Grid.Column>
+                                        <Grid.Column style = {columnStyleMobile}>
                                             <ExperienceCard {...cardItem}/>
                                         </Grid.Column>
                                     ))
@@ -32,4 +33,4 @@ const Experience = ({rowsShown}) => {
         </div>
     )
 }
-export default Experience;
+export default ExperienceMobile;
