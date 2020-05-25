@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import {
-  BrowserRouter as Router,
-  Switch, Route
+  BrowserRouter as Router, Route
 } from 'react-router-dom'
-import { Segment, Container, Button, Responsive, Header } from 'semantic-ui-react';
+import { Segment, Container, Button, Responsive} from 'semantic-ui-react';
 import PhotoAndStory from './componentsEN/PhotoAndStory'
 import PageMenu from './componentsEN/PageMenu';
 import Experience from './componentsEN/Experience';
 import ExperienceMobile from './componentsEN/ExperienceMobile';
 import ProjectCard from './componentsEN/ProjectCard';
-import cards from './objects/cards';
+import cards from './objects/cardsEN';
+import projectsEN from './objects/projectStringsEN';
 const SiteEN = () => {
   const [rowsShown, setRowsShown] = useState(1);
   return (
@@ -39,14 +39,7 @@ const SiteEN = () => {
             </Route>
             <Route exact path="/projects">
               <Container >
-                <ProjectCard projectName="test" description="test description">
-                  <Container style={{display:'flex',justifyContent:'center'}}>
-                    <div style={{ width: '600px', height: '600px', background: 'black' }}>
-
-                    </div>
-                  </Container>
-                </ProjectCard>
-                <ProjectCard projectName="test" description="test description">
+                <ProjectCard {...projectsEN.example}>
                   <Container style={{display:'flex',justifyContent:'center'}}>
                     <div style={{ width: '600px', height: '600px', background: 'black' }}>
 

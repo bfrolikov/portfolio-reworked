@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Divider, Grid, Transition } from 'semantic-ui-react';
 import ExperienceCard from './ExperienceCard';
-import cards from '../objects/cards';
+import cards from '../objects/cardsEN';
 
 const Experience = ({rowsShown}) => {
     return (
