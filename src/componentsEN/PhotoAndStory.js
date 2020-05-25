@@ -4,7 +4,7 @@ import face from '../images/face.jpg';
 
 const PhotoAndStory = () => {
   return (
-    <Grid stackable style={{marginBottom:'35px'}}>
+    <Grid stackable style={{marginBottom:'35px',marginTop:'25px'}}>
       <Grid.Row>
         <Grid.Column width={5}>
             <Card >

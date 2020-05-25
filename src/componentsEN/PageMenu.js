@@ -4,7 +4,7 @@ import MenuItem from './MenuItem';
 const PageMenu = () => {
     const [activeItem, setActiveItem] = useState('about me');
     return (
-        <Menu inverted secondary style={{ fontSize: '1.3em',marginBottom:'25px' }}>
+        <Menu inverted secondary style={{ fontSize: '1.3em'}}>
             <MenuItem
                 activeItem={activeItem}
                 handler={() => setActiveItem('about me')}

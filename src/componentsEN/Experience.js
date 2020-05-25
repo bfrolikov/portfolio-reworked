@@ -6,7 +6,7 @@ import cards from '../objects/cards';
 const Experience = ({rowsShown}) => {
     return (
         <div>
-            <Divider horizontal style={{ fontSize: '2.5em' }}>technologies that I use</Divider>
+            <Divider horizontal style={{ fontSize: '2.5em',marginBottom:'25px' }}>technologies that I use</Divider>
             <Container>
                 <Transition.Group
                 as = {Grid}
