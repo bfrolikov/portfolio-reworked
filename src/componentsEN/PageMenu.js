@@ -77,7 +77,7 @@ const PageMenu = () => {
                             <Menu.Item
                                 style={langMenuStyle}
                                 as={Link}
-                                active 
+                                active
                                 to="/en">
                                 EN
                             </Menu.Item>
