@@ -15,11 +15,11 @@ const Experience = ({rowsShown}) => {
                 relaxed stackable
                 >
                     {
-                        cards.slice(0,rowsShown).map((rowItem)=>(
-                            <Grid.Row>
+                        cards.slice(0,rowsShown).map((rowItem,index)=>(
+                            <Grid.Row key={index}> {/*It's an antipattern, but I think it should work here*/}
                                 {
                                     rowItem.map((cardItem)=>(
-                                        <Grid.Column>
+                                        <Grid.Column key={cardItem.id}>
                                             <ExperienceCard {...cardItem}/>
                                         </Grid.Column>
                                     ))

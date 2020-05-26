@@ -1,9 +1,20 @@
 import React, { useState } from 'react';
 import SiteEN from './SiteEN';
+import SiteRU from './SiteRU';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 const App = () => {
   return (
     <div className="App">
-      <SiteEN/>
+      <Router>
+        <Switch>
+          <Route path="/en">
+            <SiteEN />
+          </Route>
+          <Route path="/">
+            <SiteRU />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const PageMenu = () => {
         padding: '10px 10px 10px 10px',
         outline: 'none'
     }
-    const [activeItem, setActiveItem] = useState('about me');
+    const [activeItem, setActiveItem] = useState('обо мне');
     return (
         <div>
             <Responsive {...Responsive.onlyMobile} as={Grid} columns={2} stackable>
@@ -16,6 +16,7 @@ const PageMenu = () => {
                     <Grid.Column floated="right" style={{ display: 'flex', justifyContent: 'flex-start' }}>
                         <Menu inverted secondary>
                             <Menu.Item
+                                active
                                 style={langMenuStyle}
                                 as={Link}
                                 to="/">
@@ -24,7 +25,6 @@ const PageMenu = () => {
                             <Menu.Item
                                 style={langMenuStyle}
                                 as={Link}
-                                active
                                 to="/en">
                                 EN
                             </Menu.Item>
@@ -34,15 +34,15 @@ const PageMenu = () => {
                         <Menu inverted secondary style={{ fontSize: '1.3em' }}>
                             <MenuItem
                                 activeItem={activeItem}
-                                handler={() => setActiveItem('about me')}
-                                title="About me"
-                                location="/en"
+                                handler={() => setActiveItem('обо мне')}
+                                title="Обо мне"
+                                location="/"
                             />
                             <MenuItem
                                 activeItem={activeItem}
-                                handler={() => setActiveItem('my projects')}
-                                title="My Projects"
-                                location="/en/projects"
+                                handler={() => setActiveItem('мои проекты')}
+                                title="Мои проекты"
+                                location="/projects"
                             />
                         </Menu>
                     </Grid.Column>
@@ -54,21 +54,22 @@ const PageMenu = () => {
                         <Menu inverted secondary style={{ fontSize: '1.3em' }}>
                             <MenuItem
                                 activeItem={activeItem}
-                                handler={() => setActiveItem('about me')}
-                                title="About me"
-                                location="/en"
+                                handler={() => setActiveItem('обо мне')}
+                                title="Обо мне"
+                                location="/"
                             />
                             <MenuItem
                                 activeItem={activeItem}
-                                handler={() => setActiveItem('my projects')}
-                                title="My Projects"
-                                location="/en/projects"
+                                handler={() => setActiveItem('мои проекты')}
+                                title="Мои проекты"
+                                location="/projects"
                             />
                         </Menu>
                     </Grid.Column>
                     <Grid.Column floated="right" style={{ display: 'flex', justifyContent: 'flex-end' }}>
                         <Menu inverted secondary>
                             <Menu.Item
+                                active
                                 style={langMenuStyle}
                                 as={Link}
                                 to="/">
@@ -77,7 +78,6 @@ const PageMenu = () => {
                             <Menu.Item
                                 style={langMenuStyle}
                                 as={Link}
-                                active
                                 to="/en">
                                 EN
                             </Menu.Item>
