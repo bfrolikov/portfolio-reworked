@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom'
-import { Segment, Container, Button, Responsive} from 'semantic-ui-react';
+import { Segment, Container, Button} from 'semantic-ui-react';
 import PhotoAndStory from './componentsEN/PhotoAndStory'
 import PageMenu from './componentsEN/PageMenu';
 import Experience from './componentsEN/Experience';
-import ExperienceMobile from './componentsEN/ExperienceMobile';
 import ProjectCard from './componentsEN/ProjectCard';
 import cards from './objects/cardsEN';
 import projectsEN from './objects/projectStringsEN';
@@ -23,8 +22,7 @@ const SiteEN = () => {
           </Segment>
           <Segment >
             <Route exact path="/en">
-              <Responsive as={ExperienceMobile} {...Responsive.onlyMobile} rowsShown={rowsShown} />
-              <Responsive as={Experience} minWidth={Responsive.onlyTablet.minWidth} rowsShown={rowsShown} />
+              <Experience rowsShown={rowsShown}/>
               <Container textAlign='center'>
                 <Button style={{ marginTop: '25px' }}
                   onClick={() => setRowsShown(rowsShown + 1)}

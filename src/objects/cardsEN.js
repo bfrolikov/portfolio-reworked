@@ -53,5 +53,8 @@ const cards = [
     ]
 
 ];
-
+for(let i=0;i<cards.length;i++)
+{
+    cards[i].id = i; //thanks JavaScript
+}
 export default cards;

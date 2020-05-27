@@ -4,7 +4,6 @@ import { Segment, Container, Button, Responsive} from 'semantic-ui-react';
 import PhotoAndStory from './componentsRU/PhotoAndStory'
 import PageMenu from './componentsRU/PageMenu';
 import Experience from './componentsRU/Experience';
-import ExperienceMobile from './componentsRU/ExperienceMobile';
 import ProjectCard from './componentsRU/ProjectCard';
 import cards from './objects/cardsRU';
 import projects from './objects/projectStringsRU';
@@ -23,8 +22,7 @@ const SiteRU = () => {
           </Segment>
           <Segment >
             <Route exact path="/">
-              <Responsive as={ExperienceMobile} {...Responsive.onlyMobile} rowsShown={rowsShown} />
-              <Responsive as={Experience} minWidth={Responsive.onlyTablet.minWidth} rowsShown={rowsShown} />
+              <Experience rowsShown={rowsShown}/>
               <Container textAlign='center'>
                 <Button style={{ marginTop: '25px' }}
                   onClick={() => setRowsShown(rowsShown + 1)}
