@@ -31,7 +31,7 @@ const PageMenu = () => {
                         </Menu>
                     </Grid.Column>
                     <Grid.Column>
-                        <Menu inverted secondary style={{ fontSize: '1.3em' }}>
+                        <Menu inverted secondary style={{ fontSize: '1.3em' }} stackable>
                             <MenuItem
                                 activeItem={activeItem}
                                 handler={() => setActiveItem('обо мне')}
@@ -43,6 +43,12 @@ const PageMenu = () => {
                                 handler={() => setActiveItem('мои проекты')}
                                 title="Мои проекты"
                                 location="/projects"
+                            />
+                            <MenuItem
+                                activeItem={activeItem}
+                                handler={() => setActiveItem('cертификаты и курсы')}
+                                title="Сертификаты и курсы"
+                                location="/cert"
                             />
                         </Menu>
                     </Grid.Column>
@@ -63,6 +69,12 @@ const PageMenu = () => {
                                 handler={() => setActiveItem('мои проекты')}
                                 title="Мои проекты"
                                 location="/projects"
+                            />
+                            <MenuItem
+                                activeItem={activeItem}
+                                handler={() => setActiveItem('cертификаты и курсы')}
+                                title="Сертификаты и курсы"
+                                location="/cert"
                             />
                         </Menu>
                     </Grid.Column>

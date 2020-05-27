@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Image, Card,Header } from 'semantic-ui-react';
+import {Grid, Image, Card,Header,Responsive } from 'semantic-ui-react';
 import face from '../images/face.jpg';
 
 const PhotoAndStory = () => {

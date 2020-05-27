@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom'
-import { Segment, Container, Button} from 'semantic-ui-react';
+import { Segment, Container, Button, Divider} from 'semantic-ui-react';
 import PhotoAndStory from './componentsEN/PhotoAndStory'
 import PageMenu from './componentsEN/PageMenu';
 import Experience from './componentsEN/Experience';
 import ProjectCard from './componentsEN/ProjectCard';
+import SnakeCard from './componentsEN/SnakeCard';
 import cards from './objects/cardsEN';
 import projectsEN from './objects/projectStringsEN';
 const SiteEN = () => {
@@ -27,20 +28,18 @@ const SiteEN = () => {
                 <Button style={{ marginTop: '25px' }}
                   onClick={() => setRowsShown(rowsShown + 1)}
                   disabled={rowsShown >= cards.length}
+                  primary
                 >
                   Show More
               </Button>
               </Container>
             </Route>
             <Route exact path="/en/projects">
-              <Container >
-                <ProjectCard {...projectsEN.example}>
-                  <Container style={{display:'flex',justifyContent:'center'}}>
-                    <div style={{ width: '600px', height: '600px', background: 'black' }}>
-
-                    </div>
-                  </Container>
-                </ProjectCard>
+              <Container>
+                <Divider horizontal style={{fontSize:'2.6em'}}>
+                  2020 
+                </Divider>
+                <SnakeCard/>
               </Container>
             </Route>
           </Segment>

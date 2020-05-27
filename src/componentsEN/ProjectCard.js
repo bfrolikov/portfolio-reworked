@@ -6,7 +6,7 @@ const ProjectCard = ({ children, projectName, description,additionalDescription 
         <Popup
             content={expanded ?'Click for less information' : 'Click for more information'}
             trigger={
-                <Segment.Group raised style={{ marginTop: '65px' }} onClick={() => { setExpanded(!expanded) }} >
+                <Segment.Group raised style={{ marginBottom: '65px' }} onClick={() => { setExpanded(!expanded) }} >
                     {children}
                     <Segment>
                         <Header style={{ fontSize: '1.6em' }}>{projectName}</Header>
