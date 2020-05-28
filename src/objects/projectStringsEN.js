@@ -8,8 +8,14 @@ const obj = {
     snake:
     {
         projectName:'Pure JavaScript Snake',
-        description:'I wrote a simple snake game in vanilla JavaScript for fun (and also for practice). WASD to move, Ctrl to restart',
+        description:'I wrote a simple snake game in vanilla JavaScript for fun (and also for practice). <code>WASD</code> to move, Ctrl to restart',
         additionalDescription:'Source Code: https://codepen.io/bfrolikov/pen/xxwOQQJ'
+    },
+    bot:
+    {
+        projectName:'Calculator bot',
+        description:'A highschooler friend asked me to build a VK bot to help him with his geometry lessons. Every lesson they were given small tests in which they had to manually calculate certain properties of given geometric objects. And since the tests were automatically generated, I build a chat bot in Node.js to handle these calculations. Works great to this day.',
+        additionalDescription:''
     }
 }
 export default obj;

@@ -4,15 +4,16 @@ import { Segment, Container, Button, Divider} from 'semantic-ui-react';
 import PhotoAndStory from './componentsEN/PhotoAndStory'
 import PageMenu from './componentsEN/PageMenu';
 import Experience from './componentsEN/Experience';
-import ProjectCard from './componentsEN/ProjectCard';
 import SnakeCard from './componentsEN/SnakeCard';
+import BotCard from './componentsEN/BotCard';
+import AndroidAppCard from './componentsEN/AndroidAppCard';
 import cards from './objects/cardsEN';
 import projectsEN from './objects/projectStringsEN';
 const SiteEN = () => {
   const [rowsShown, setRowsShown] = useState(1);
   return (
     <div>
-        <Segment.Group>
+        <Segment.Group style={{border:'0px'}}>
           <Segment inverted textAlign='center'>
             <Container  style={{}}>
               <PageMenu />
@@ -40,6 +41,11 @@ const SiteEN = () => {
                   2020 
                 </Divider>
                 <SnakeCard/>
+                <Divider horizontal style={{fontSize:'2.6em'}}>
+                  2019 
+                </Divider>
+                <BotCard/>
+                <AndroidAppCard/>
               </Container>
             </Route>
           </Segment>

@@ -1,3 +1,9 @@
 body {
     overflow-y: scroll;
   }
+em{
+    font-family: Courier;
+    font-style: normal;
+    background-color: hsla(0,0%,88.2%,.6);
+    padding: 2px 5px 2px 5px;
+}

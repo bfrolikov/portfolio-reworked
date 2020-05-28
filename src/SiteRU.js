@@ -11,7 +11,7 @@ const SiteRU = () => {
   const [rowsShown, setRowsShown] = useState(1);
   return (
     <div>
-        <Segment.Group>
+        <Segment.Group style={{border:'0px'}}>
           <Segment inverted textAlign='center'>
             <Container  style={{}}>
               <PageMenu />
