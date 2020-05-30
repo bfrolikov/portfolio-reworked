@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Segment, Popup, Header, Transition, Image, Container, Icon } from 'semantic-ui-react';
+import { Segment, Popup, Header, Transition, Image, Icon } from 'semantic-ui-react';
 import botThumbnail from '../images/botThumbnail.jpg'
 const BotCard = ({ mobile }) => {
     const [expanded, setExpanded] = useState(false);

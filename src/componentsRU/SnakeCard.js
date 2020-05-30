@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Segment, Popup, Header, Transition, Button, Container } from 'semantic-ui-react';
+import React from 'react'
+import { Segment, Header, Button, Container } from 'semantic-ui-react';
 import useSnake from '../hooks/useSnake';
 import '../snake.css';
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Segment, Popup, Header, Transition, Embed, Container, Icon } from 'semantic-ui-react';
+import { Segment, Popup, Header, Transition, Embed,  Icon } from 'semantic-ui-react';
 import thumbnail from "../images/thumbnail-min.jpg"
 const WateringCard = ({ mobile }) => {
   const [expanded, setExpanded] = useState(false);

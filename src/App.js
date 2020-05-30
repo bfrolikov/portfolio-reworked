@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SiteEN from './SiteEN';
 import SiteRU from './SiteRU';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'

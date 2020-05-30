@@ -12,7 +12,6 @@ import BotCard from './componentsEN/BotCard';
 import AndroidAppCard from './componentsEN/AndroidAppCard';
 import WateringCard from './componentsEN/WateringCard';
 import cards from './objects/cardsEN';
-import projectsEN from './objects/projectStringsEN';
 const SiteEN = () => {
   const [rowsShown, setRowsShown] = useState(1);
   return (

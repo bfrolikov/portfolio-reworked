@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Image, Segment, Header } from 'semantic-ui-react';
+import { Container, Image, Segment, Header } from 'semantic-ui-react';
 import certFullStack from '../images/certificate-fullstack.png';
 import certAndroid from '../images/certSamsung.jpg'
 const Certificates = ({mobile}) => {

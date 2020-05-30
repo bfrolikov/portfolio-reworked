@@ -1,5 +1,5 @@
 import React from 'react'
-import { Segment, Popup, Header, Transition, Button, Container } from 'semantic-ui-react';
+import { Segment, Header, Button, Container } from 'semantic-ui-react';
 import projectsEN from '../objects/projectStringsEN';
 import '../snake.css';
 

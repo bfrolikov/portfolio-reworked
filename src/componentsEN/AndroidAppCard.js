@@ -3,8 +3,6 @@ import { Segment, Popup, Header, Transition, Image, Icon } from 'semantic-ui-rea
 import androidThumbnail from '../images/androidThumbnailAlternate.jpg'
 const AndroidAppCard = ({ mobile }) => {
     const [expanded, setExpanded] = useState(false);
-    const hide = 10;
-    const show = 500;
     return (
         <Popup
             content={expanded ? 'Click to hide links' : 'Click to show links'}
