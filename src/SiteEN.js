@@ -5,7 +5,9 @@ import PhotoAndStory from './componentsEN/PhotoAndStory'
 import PageMenu from './componentsEN/PageMenu';
 import Experience from './componentsEN/Experience';
 import Certificates from './componentsEN/Certificates';
+import PCMobileResponsive from './PCMobileResponsive';
 import SnakeCard from './componentsEN/SnakeCard';
+import SnakeCardMobile from './componentsEN/SnakeCardMobile';
 import BotCard from './componentsEN/BotCard';
 import AndroidAppCard from './componentsEN/AndroidAppCard';
 import WateringCard from './componentsEN/WateringCard';
@@ -42,21 +44,18 @@ const SiteEN = () => {
               <Divider horizontal style={{ fontSize: '2.6em', marginBottom: '24px' }}>
                 2020
                 </Divider>
-              <Responsive as={SnakeCard} mobile={true} {...Responsive.onlyMobile} />
+              <Responsive as={SnakeCardMobile} mobile={true} {...Responsive.onlyMobile} />
               <Responsive as={SnakeCard} mobile={false} minWidth={Responsive.onlyTablet.minWidth} />
-              <Responsive as={WateringCard} mobile={true} {...Responsive.onlyMobile} />
-              <Responsive as={WateringCard} mobile={false} minWidth={Responsive.onlyTablet.minWidth} />
+              <PCMobileResponsive as={WateringCard} />
               <Divider horizontal style={{ fontSize: '2.6em', marginBottom: '24px' }}>
                 2019
                 </Divider>
-              <Responsive as={BotCard} mobile={true} {...Responsive.onlyMobile} />
-              <Responsive as={BotCard} mobile={false} minWidth={Responsive.onlyTablet.minWidth} />
-              <Responsive as={AndroidAppCard} mobile={true} {...Responsive.onlyMobile} />
-              <Responsive as={AndroidAppCard} mobile={false} minWidth={Responsive.onlyTablet.minWidth} />
+              <PCMobileResponsive as={BotCard} />
+              <PCMobileResponsive as={AndroidAppCard} />
             </Container>
           </Route>
           <Route exact path="/en/cert">
-            <Certificates />
+            <PCMobileResponsive as={Certificates} />
           </Route>
         </Segment>
       </Segment.Group>
