@@ -10,7 +10,7 @@ const Experience = ({ rowsShown }) => {
             <Responsive as={Divider} horizontal style={{ fontSize: '2.5em', marginBottom: '25px' }} minWidth={Responsive.onlyTablet.minWidth}>
                 технологии, которые я использую
             </Responsive>
-            <Responsive as={Divider} horizontal style={{ fontSize: '1.5em', marginBottom: '25px' }} {...Responsive.onlyMobile}>
+            <Responsive as={Divider} horizontal style={{ fontSize: '1.6em', marginBottom: '25px' }} {...Responsive.onlyMobile}>
                 технологии,<br/> которые я использую
             </Responsive>
             <Responsive as={Container} minWidth={Responsive.onlyTablet.minWidth}>

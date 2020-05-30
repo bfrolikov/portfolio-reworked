@@ -16,9 +16,9 @@ const PageMenu = () => {
                     <Grid.Column floated="right" style={{ display: 'flex', justifyContent: 'flex-start' }}>
                         <Menu inverted secondary>
                             <Menu.Item
-                                active
                                 style={langMenuStyle}
                                 as={Link}
+                                active
                                 to="/">
                                 RU
                             </Menu.Item>
@@ -46,7 +46,7 @@ const PageMenu = () => {
                             />
                             <MenuItem
                                 activeItem={activeItem}
-                                handler={() => setActiveItem('cертификаты и курсы')}
+                                handler={() => setActiveItem('сертификаты и курсы')}
                                 title="Сертификаты и курсы"
                                 location="/cert"
                             />
@@ -72,7 +72,7 @@ const PageMenu = () => {
                             />
                             <MenuItem
                                 activeItem={activeItem}
-                                handler={() => setActiveItem('cертификаты и курсы')}
+                                handler={() => setActiveItem('сертификаты и курсы')}
                                 title="Сертификаты и курсы"
                                 location="/cert"
                             />
@@ -81,9 +81,9 @@ const PageMenu = () => {
                     <Grid.Column floated="right" style={{ display: 'flex', justifyContent: 'flex-end' }}>
                         <Menu inverted secondary>
                             <Menu.Item
-                                active
                                 style={langMenuStyle}
                                 as={Link}
+                                active
                                 to="/">
                                 RU
                             </Menu.Item>
